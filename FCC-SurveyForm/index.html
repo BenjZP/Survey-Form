@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style></style>
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<div class = "container">
+  <class = "header">
+    <h1 id="title" class="text-center">Online Shop Survey Form
+    </h1>
+    <p id="description" class="description text-center">I appreciate your time for taking this survey, thank you for your time.
+    </p>
+  </header>
+
+<form id = "survey-form">
+  <div class = "form-group">
+    <label id = "name-label" for="name">Full Name
+    </label>
+    <input
+        type = "text"
+        name = "name"
+        id = "name"
+        class = "form-control"
+        placeholder = "Surname, Given-name Initial." required/>
+  </div>
+
+  <div class = "form-group">
+    <label id = "email-label" for="email">Email</label>
+    <input
+        type = "email"
+        name = "email"
+        id = "email"
+        class = "form-control"
+        placeholder = "ex. survey1234@gmail.com" required/>
+  </div>
+  
+  <div class = "form-group">
+    <label
+        id = "number-label"
+        for = "number">Age<span
+        class = "clue">(optional)</span></label>
+    <input
+        type = "number"
+        name = "age"
+        id = "number"
+        min = "10"
+        max = "99"
+        class = "form-control"
+        placeholder = "Age"/>
+  </div>
+  
+  <div class = "form-group">
+    <p>
+      Which option best describes you?
+    </p>
+      <select
+         id = "dropdown"
+         name = "role"
+         class = "form-control"
+         required>
+       <option disabled selected value>
+         Select current role
+       </option>
+       <option value = "regular-costumer">
+         Regular Costumer
+       </option>
+       <option value = "wholesaler">
+         Wholesaler
+       </option>
+       <option value = "reseller">
+         Reseller
+         </option>
+       <option value = "other">
+         Other
+         </option>
+    </select>
+  </div>
+  
+  <div class = "form-group">
+    <p>
+      Would you recommend our online shop?
+    </p>
+    <label>
+      <input 
+         name = "user-recommend"
+         value = "definitely"
+         type = "radio"
+         class = "input-radio"
+         checked/>Definitely</label>
+    <label>  
+    <input 
+         name = "user-recommend"
+         value = "maybe"
+         type = "radio"
+         class = "input-radio"
+         checked/>Maybe</label>
+      <label>
+        <input 
+         name = "user-recommend"
+         value = "not-sure"
+         type = "radio"
+         class = "input-radio"
+         checked/>Not sure</label>
+  </div>
+  <div class = "form-group"
+     <p>
+     What is your favorite product?
+     </p>
+   <select
+         id = "most-like"
+         name = "mostlike"
+         class = "form-control"
+         required>
+     <option desabled selected value>
+       Select an option
+     </option>
+     <option value = "earrings">
+       Earrings
+     </option>
+     <option value = "pins">
+       Pins
+     </option>
+     <option value = "key-chain">
+       Key Chain
+     </option>
+     <option value = "commission">
+       Comission
+     </option>
+   </select>
+  </div>
+
+  <div class = "form-group">
+     <p>
+       What would you like to improved us?
+       <span
+          class = "clue">(Check all that apply)
+       </span>
+     </p>
+     <label>
+       <input
+          name = "new-product-design"
+          type = "checkbox"
+          value = "chat-response"
+          class = "input-checkbox"/>
+       New Product Design
+     </label>
+     <label>
+       <input
+          name = "new-service-courrier"
+          type = "checkbox"
+          value = "chat-response"
+          class = "input-checkbox"/>
+       New Service Courrier
+     </label>
+     <label>
+       <input
+          name = "costumer-service"
+          type = "checkbox"
+          value = "chat-response"
+          class = "input-checkbox"/>
+       Costumer Service
+     </label>
+     <label>
+       <input
+          name = "chat-response"
+          type = "checkbox"
+          value = "chat-response"
+          class = "input-checkbox"/>
+       Chat Response
+     </label>
+  </div>
+  
+  <div class = "form-group">
+    <p>
+      Any comments or suggestions?
+    </p>
+    <textarea
+       id = "comments"
+       class = "input-textarea"
+       name = "comment"
+       placeholder = "Enter your feedback here....">
+      </textarea>
+   </div>
+   
+   <div class = "form-group">
+     <button
+        type = "submit"
+        id = "submit"
+        class = "submit-button">
+       Submit
+     </button>
+   </div>
+ </form>
+</div>
